@@ -1,7 +1,7 @@
 import requests
 
-#url = 'https://api.chucknorris.io/jokes/random'
-url = 'https://api.chucknorris.io/jokes/categories'
+url = 'https://api.chucknorris.io/jokes/random'
+#url = 'https://api.chucknorris.io/jokes/categories'
 
 def conn_api_and_get_data(url):
     res = requests.get(url)
@@ -20,8 +20,8 @@ def conn_api_and_get_data_by_query(query):
     else:
         return None
 
-#print(conn_api_and_get_data(url)['id'])
-#print(conn_api_and_get_data(url))
-get_num_categories = conn_api_and_get_data(url)
-print(conn_api_and_get_data_by_query(get_num_categories[2]))
+print(conn_api_and_get_data(url)['id'])
+print(conn_api_and_get_data(url)['value'])
+#get_num_categories = conn_api_and_get_data(url)
+#print(conn_api_and_get_data_by_query(get_num_categories[2]))
 
