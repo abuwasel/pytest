@@ -22,6 +22,6 @@ def conn_api_and_get_data_by_query(query):
 
 #print(conn_api_and_get_data(url)['id'])
 #print(conn_api_and_get_data(url))
-get_nem_categories = conn_api_and_get_data(url)
-print(conn_api_and_get_data_by_query(get_nem_categories[2]))
+get_num_categories = conn_api_and_get_data(url)
+print(conn_api_and_get_data_by_query(get_num_categories[2]))
 
